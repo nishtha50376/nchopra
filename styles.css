@@ -3,19 +3,19 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #2e2e2e; /* Matte dark grey */
+    background-color: #ffffff; /* Light background color */
     color: #d4af37; /* Matte dark yellow */
 }
 
 header {
-    background: #2e2e2e; /* Matte dark grey */
+    background: #ffffff; /* Light background color */
     color: #d4af37; /* Matte dark yellow */
     padding: 1rem 0;
     text-align: center;
 }
 
 nav {
-    background: #444; /* Darker grey for contrast */
+    background: #f0f0f0; /* Light grey background for contrast */
     color: #d4af37; /* Matte dark yellow */
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #2e2e2e; /* Matte dark grey */
+    color: #ffffff; /* White text */
     background-color: #d4af37; /* Matte dark yellow */
     padding: 0.2rem 0.5rem;
 }
@@ -59,7 +59,7 @@ h2 {
 }
 
 footer {
-    background: #2e2e2e; /* Matte dark grey */
+    background: #ffffff; /* Light background color */
     color: #d4af37; /* Matte dark yellow */
     text-align: center;
     padding: 1rem 0;
