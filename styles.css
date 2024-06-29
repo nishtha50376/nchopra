@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     color: #333;
+    padding-bottom: 60px; /* Add padding to the bottom to ensure content isn't hidden */
 }
 
 header {
@@ -25,9 +26,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative; /* Changed from fixed to relative */
+    position: static; /* Changed from fixed to static */
     width: 100%;
-    bottom: 0;
     margin-top: 20px; /* Added margin for spacing */
 }
 
@@ -47,11 +47,4 @@ footer {
     50% { background-color: blue; left: 200px; top: 200px; }
     75% { background-color: green; left: 0px; top: 200px; }
     100% { background-color: red; left: 0px; top: 0px; }
-}
-
-/* Ensure there's enough space at the bottom of the page */
-body::after {
-    content: "";
-    display: block;
-    height: 100px; /* Adjust as needed */
 }
