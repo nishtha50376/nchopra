@@ -25,17 +25,10 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative; /* Changed from fixed to relative */
     width: 100%;
     bottom: 0;
-}
-
-@keyframes example {
-    0% { background-color: red; left: 0px; top: 0px; }
-    25% { background-color: yellow; left: 200px; top: 0px; }
-    50% { background-color: blue; left: 200px; top: 200px; }
-    75% { background-color: green; left: 0px; top: 200px; }
-    100% { background-color: red; left: 0px; top: 0px; }
+    margin-top: 20px; /* Added margin for spacing */
 }
 
 .animated-box {
@@ -46,4 +39,19 @@ footer {
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% { background-color: red; left: 0px; top: 0px; }
+    25% { background-color: yellow; left: 200px; top: 0px; }
+    50% { background-color: blue; left: 200px; top: 200px; }
+    75% { background-color: green; left: 0px; top: 200px; }
+    100% { background-color: red; left: 0px; top: 0px; }
+}
+
+/* Ensure there's enough space at the bottom of the page */
+body::after {
+    content: "";
+    display: block;
+    height: 100px; /* Adjust as needed */
 }
