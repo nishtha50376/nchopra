@@ -1,64 +1,47 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Light gray background */
-    color: #333; /* Dark gray text */
-    line-height: 1.6; /* Improved readability */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
 }
 
 .container {
-    max-width: 800px; /* Limit content width */
-    margin: 0 auto; /* Center align content */
-    padding: 20px; /* Add padding around content */
-}
-
-header {
-    background-color: #007bff; /* Blue header */
-    color: white; /* White text */
-    text-align: center;
-    padding: 20px 0;
-}
-
-nav {
-    background-color: #f0f0f0; /* Light background for navigation */
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #333; /* Dark gray links */
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px 0;
-}
-
-section {
-    background-color: white; /* White sections */
-    margin-bottom: 20px; /* Space between sections */
+    background-color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: #333; /* Dark footer */
-    color: white; /* White text */
-    text-align: center;
-    padding: 10px 0;
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.map img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.nav-button {
+    margin-top: 20px;
+}
+
+.nav-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.nav-button a:hover {
+    background-color: #45a049;
 }
