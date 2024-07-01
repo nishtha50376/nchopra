@@ -3,31 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Nishtha Chopra - Journey</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            font-size: 3em;
+            margin-bottom: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .nav-item {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: color 0.3s;
+        }
+        .nav-item:hover {
+            color: #007acc;
+        }
+        .nav-item i {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Nishtha's Journey from India to the UK</h1>
-        <div class="map">
-            <!-- Simple schematic or illustration of travel -->
-            <img src="india-uk-map.png" alt="India to UK Travel Map">
-        </div>
-        <div class="nav-button">
-            <a href="cv.html" class="animate__animated animate__lightSpeedInLeft">View My CV</a>
-        </div>
-    </div>
-
+    <header>Welcome</header>
     <nav>
-    <ul>
-        <li><a href="index.html" class="nav-button">Home</a></li>
-        <li><a href="about.html" class="nav-button">About</a></li>
-        <li><a href="research-projects.html" class="nav-button">Research Projects</a></li>
-        <li><a href="science.html" class="nav-button">Sciency Stuff</a></li>
-    </ul>
+        <a href="#about" class="nav-item">
+            <i class="fas fa-user"></i>
+            About
+        </a>
+        <a href="#projects" class="nav-item">
+            <i class="fas fa-project-diagram"></i>
+            Projects
+        </a>
+        <a href="#notes" class="nav-item">
+            <i class="fas fa-sticky-note"></i>
+            Notes
+        </a>
+        <a href="#stuff" class="nav-item">
+            <i class="fas fa-box-open"></i>
+            Stuff
+        </a>
     </nav>
-
-    <script src="script.js"></script>
 </body>
 </html>
