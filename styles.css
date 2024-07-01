@@ -67,7 +67,48 @@ nav {
     background-color: #f9fbe7;
 }
 
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-item p {
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+@media (max-width: 900px) {
+    .project-item {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
 @media (max-width: 600px) {
+    .project-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
     header {
         font-size: 2.5em;
     }
